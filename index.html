@@ -1,13 +1,4 @@
 <html>
-<<<<<<< Updated upstream
-<body>
-<h1>Example</h1>
-
-<div class="d-flex flex-row flex-wrap">
-  <div class="p-2">Flex item 1.0000000000000000000</div>
-  <div class="p-2">Flex item 2.0000000000000000000</div>
-  <div class="p-2">Flex item 3.0000000000000000000</div>
-=======
 <head>
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous"><link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"><meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +9,7 @@
     /* ----------------------------------------------------------------
     Navbar Style
     ---------------------------------------------------------------- */
-        html {
-        scroll-behavior: smooth;
-        }
-
-        ul {
+        nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -33,11 +20,11 @@
             background-color: #FF6600;
             }
 
-        li {
+        nav li {
             float: left;
             }
 
-        li a {
+        nav li a {
             display: block;
             color: white;
             text-align: center;
@@ -45,11 +32,11 @@
             text-decoration: none;
             }
 
-        li a:hover:not(.active) {
+        nav li a:hover:not(.active) {
             background-color: #FFFFFF;
             }
 
-        .active {
+        nav .active {
                 background-color: #FF6600;
                 }
     /* ----------------------------------------------------------------
@@ -256,11 +243,13 @@
 Navbar
 -----------------------------------------------------------
 -->
-<ul>
-    <li style="float:right"><a class="active" href="#Organizer">Organizer</a></li>
-    <li style="float:right"><a class="active" href="#Schedule">Schedule</a></li>
-    <li style="float:right"><a  class="active" href="#Register">Register</a></li>
-</ul>
+<nav>
+   <ul>
+        <li style="float:right"><a class="active" href="#Organizer">Organizer</a></li>
+        <li style="float:right"><a class="active" href="#Schedule">Schedule</a></li>
+        <li style="float:right"><a  class="active" href="#Register">Register</a></li>
+    </ul>
+</nav>
 <!-- 
 -----------------------------------------------------------
 Above fold section
