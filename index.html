@@ -1,44 +1,27 @@
-<!doctype html>
-<html lang="en-US"><head><meta charset='utf-8'>
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous"><link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<!doctype html><html lang="en-US"><head><meta charset='utf-8'><link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous"><link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
 
 <style>
     /* ----------------------------------------------------------------
     Navbar Style
     ---------------------------------------------------------------- */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            border-bottom-style: solid;
-            border-bottom-width: 10;
-            border-bottom-color: #fc9;
-            overflow: hidden;
-            background-color: #FF6600;
-            }
-
-        nav li {
-            float: left;
-            }
-
-        nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-
-        nav li a:hover:not(.active) {
-            background-color: #FFFFFF;
-            }
-
-        nav .active {
-                background-color: #FF6600;
-                }
+    nav{
+        border-bottom: 1px solid black;
+        padding: 6vh 0 4vh 6vw;
+    }
+    nav a{
+        color: black;
+    }
+    #brand{
+        padding-right: 2vw;
+        font-weight: 800;
+        float: left;
+    }
+    #links{
+        display: inline-block;
+    }
     /* ----------------------------------------------------------------
     General styles
     ---------------------------------------------------------------- */
@@ -49,29 +32,13 @@
     html{
         scroll-behavior: smooth;
     }
-    #contact{
-        background-color: #ffe7cf;
-        border-top: 1px solid #EB6C15;
-    }
-    footer{
-        background-color: cornflowerblue;
-        color: white;
-        
-    }
-    .footer-content{
-        padding-top: 5 em;
-        padding-bottom: 5 em;
-    }
-    footer a{
-        color:white;
-    }
     h1{
         font-weight: 900;
-        font-size: 6.5vw;
+        font-size: 6vw;
         margin-bottom: 0.2em;
     }
     h2{
-        font-size: 7vw;
+        font-size: 8vw;
         font-family: "Nunito";
         color: #EB6C15;
         margin-bottom: 0.2em;
@@ -108,11 +75,11 @@
         background-color: #ffe7cf;
     }
     #above-fold-left{
-        padding-top: 8vh;
+        padding-top: 2vh;
         background-color: #ffe7cf;
     }
     #above-fold-right{
-        padding-top: 20vh;
+        padding-top: 10vh;
         background-color: white;
         text-align: center;
     }
@@ -165,9 +132,8 @@
         max-width: 70vw;
     }
     .location-title{
-        color: black;
         font-size: 70%;
-        font-weight: 800;
+        font-weight: 900;
         padding-bottom: 0.4em;
     }
     .descript{
@@ -179,6 +145,7 @@
         color: #EB6C15;
         position: relative;
         top: 50%;
+        font-size: 3vw;
     }
     .bar-l{
         border-left: 3px solid #EB6C15;
@@ -204,23 +171,35 @@
     }
     /* ----------------------------------------------------------------
     Speaker information
+    Try https://1linelayouts.glitch.me/ if this doesn't work
     ---------------------------------------------------------------- */
     .speaker{
-        float: left;
         margin-top: 1em;
-        width: 50vw;
+        display:inline-flex;
     }
     .speaker-img{
         height:80px;
         width:80px;
         border-radius:50%;
         margin-right: 2em;
-        float: left;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    .speaker-img:hover{
+        
+        -webkit-transform:scale(1.1); /* Safari and Chrome */
+        -moz-transform:scale(1.1); /* Firefox */
+        -ms-transform:scale(1.1); /* IE 9 */
+        -o-transform:scale(1.1); /* Opera */
+         transform:scale(1.1);
     }
     .speaker-name{
         padding-top:0.6em;
         display: inline-block;
-        width: 20vw;
+        max-width: 9em;
     }
     .speaker-descript{
         padding-top:0.1em;
@@ -242,6 +221,11 @@
         padding: 0.4em;
         border: 1px solid #FF6600;
         text-decoration-line: none;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        transition: all 0.2s ease;
     }
     .button:hover{
         background: #ffe7cf;
@@ -250,24 +234,41 @@
     .l-box {
         padding: 1em;
     }
+    /* ----------------------------------------------------------------
+    about and Footer 
+    ---------------------------------------------------------------- */
+    #about{
+        background-color: #ffe7cf;
+        border-top: 1px solid #EB6C15;
+    }
+    footer{
+        background-color: cornflowerblue;
+        color: white;
+        
+    }
+    .footer-content{
+        padding-top: 5em;
+        padding-bottom: 2em;
+        font-size: 80%;
+    }
+    footer a{
+        color:white;
+    }
 </style>
-<script>
-    function glow()
-</script>
 </head>
 <body>
 <!-- 
 -----------------------------------------------------------
-Navbar
+Navigation section
 -----------------------------------------------------------
 -->
-<nav>
-   <ul>
-        <li style="float:right"><a class="active" href="#contact">Contact</a></li>
-        <li style="float:right"><a class="active" href="#schedule">Schedule</a></li>
-        <li style="float:right"><a class="active" href="#button-register"  onclick="glow()">Register</a></li>
-    </ul>
-</nav>
+<div class="pure-g">
+    <div class="pure-u-1 pure-u-sm-2-3" id="above-fold-left-pad">
+        <nav role="navigation">
+               <span id="brand">FSU PDA SPRING EVENT.</span> <div id="links"><a href="#button-register" role="button">REGISTER</a> / <a href="#schedule">SCHEDULE</a> / <a href="#about">ABOUT</a></div>
+        </nav>
+    </div>
+</div>
 <!-- 
 -----------------------------------------------------------
 Above fold section
@@ -276,9 +277,10 @@ Above fold section
 <div class="pure-g">
     <div class="pure-u-1-24 pure-u-sm-1-24" id="above-fold-left-pad"></div>
     <div class="pure-u-23-24 pure-u-sm-5-8" id="above-fold-left">
+
     <div class="l-box">
         <h1>PLANNING YOUR CAREER AFTER A POSTDOC</h1>
-      <div id="subtitle">academic and non-academic paths</div>
+      <div id="subtitle">academic / non-academic paths</div>
       <div id="subsubtitle">Free event for postdocs<br>Online and at Florida State University</div>
     </div>
     </div>
@@ -293,18 +295,16 @@ Above fold section
 </div>
 <!-- 
 -----------------------------------------------------------
-Schedule section has 3 columns: 
-1. academic vs nonacademic, text rotated 90 degrees
-2. 
+Schedule section
 -----------------------------------------------------------
 -->
-
 <div id="schedule">
+
 <!-- Schedule: heading, location descriptions -->
     <div class="pure-g">
-        <div class="pure-u-1-24 pure-u-sm-1-24 schedule-lpad"></div>
-        <div class="pure-u-1-6 pure-u-sm-2-24 schedule-l"></div>
-        <div class="pure-u-3-4 pure-u-sm-7-8 schedule-r">
+        <div class="pure-u-sm-1-24 pure-u-1-24 schedule-lpad"></div>
+        <div class="pure-u-sm-1-6 pure-u-1-12 schedule-l"></div>
+        <div class="pure-u-sm-3-4 pure-u-7-8 schedule-r">
             <h2>SCHEDULE</h2>
             <div class="location-title">VIRTUAL LOCATION</div>
             <div class="location"> Zoom (check participant email for Zoom link).</div>
@@ -322,30 +322,30 @@ Schedule section has 3 columns:
                     </div>
                     <!-- Speaker 1-->
                     <div class="speaker">
-                        <img src="images/unofficial-debi.jpg" class="speaker-img">
+                        <img src="images/unofficial-debi.jpg"  alt="Photo of Man Cheung" class="speaker-img">
                         <div class="speaker-name">Dr. Debra Fadool<div class="speaker-descript">FSU / Neuroscience / Office of Postdoctoral Affairs</div></div>
                     </div>
                     <!-- Speaker 2-->
                     <div class="speaker">
-                        <img src="images/unofficial-chris-smith.jpg" class="speaker-img">
+                        <img src="images/unofficial-chris-smith.jpg"  alt="Photo of Man Cheung" class="speaker-img">
                         <div class="speaker-name">Dr. Chris Smith<div class="speaker-descript">Virginia Tech / Postdoctoral Affairs Program Administrator</div></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="pure-u-1-24 pure-u-sm-1-24 schedule-rpad"></div>
+        <div class="pure-u-sm-1-24 schedule-rpad"></div>
     </div>
 
 <!-- Schedule: academic -->
     <div class="pure-g vspace">
-        <div class="pure-u-1-12 pure-u-sm-1-24 schedule-lpad"></div>
-        <div class="pure-u-1-12 pure-u-sm-1-24 schedule-l">
+        <div class="pure-u-sm-1-12 schedule-lpad"></div>
+        <div class="pure-u-sm-1-12 pure-u-1-12 schedule-l">
            <div class="descript">
                 Academic<br>           
            </div>
         </div>
-        <div class="pure-u-1-24 pure-u-sm-1-24 bar-l schedule-lr"></div>
-        <div class="pure-u-3-4 pure-u-sm-5-6 schedule-r">
+        <div class="pure-u-sm-1-24 pure-u-1-24 bar-l schedule-lr"></div>
+        <div class="pure-u-sm-3-4 pure-u-5-6 schedule-r">
            <!-- Schedule: timetable: general talk-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-6 pure-u-sm-1-12 schedule-time">
@@ -354,11 +354,11 @@ Schedule section has 3 columns:
                 <div class="pure-u-1-6 pure-u-sm-1-24"></div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
-                        General Talk
+                        General Talk making the most of your postdoc
                     </div>
                     <!-- Speaker 3-->
                     <div class="speaker">
-                        <img src="images/unofficial-chris-smith.jpg" class="speaker-img">
+                        <img src="images/unofficial-chris-smith.jpg"  alt="Photo of Man Cheung" class="speaker-img">
                         <div class="speaker-name">Dr. Kenneth Hanson<div class="speaker-descript">FSU / Chemistry</div></div>
                     </div>
                 </div>
@@ -373,21 +373,25 @@ Schedule section has 3 columns:
                     <div class="schedule-title">
                         Panel Discussion
                     </div>
+                    <div class="speakers-row">
                     <!-- Speaker 4-->
-                    <div class="speaker">
-                        <img src="images/unofficial-debi.jpg" class="speaker-img"><div class="speaker-name">Dr. Francesca Bernardi<div class="speaker-descript">Worchester Polytechnic Institute / Mathematics</div></div>
+                        <div class="speaker">
+                            <img src="images/unofficial-debi.jpg"  alt="Photo of Man Cheung" class="speaker-img"><div class="speaker-name">Dr. Francesca Bernardi<div class="speaker-descript">Worchester Polytechnic Institute / Mathematics</div></div>
+                        </div>
+                        <!-- Speaker 5-->
+                        <div class="speaker">
+                            <img src="images/unofficial-chris-smith.jpg"  alt="Photo of Man Cheung" class="speaker-img"><div class="speaker-name">Dr. Erminia Fardone<div class="speaker-descript">University of Miami / Neuroscience</div></div>
+                        </div>
                     </div>
-                    <!-- Speaker 5-->
-                    <div class="speaker">
-                        <img src="images/unofficial-chris-smith.jpg" class="speaker-img"><div class="speaker-name">Dr. Erminia Fardone<div class="speaker-descript">University of Miami / Neuroscience</div></div>
-                    </div>
-                    <!-- Speaker 6-->
-                    <div class="speaker">
-                        <img src="images/unofficial-debi.jpg" class="speaker-img"><div class="speaker-name">Dr. Trelani Chapman<div class="speaker-descript">University of Alberta / Social Sciences</div></div>
-                    </div>
-                    <!-- Speaker 7-->
-                    <div class="speaker">
-                        <img src="images/unofficial-chris-smith.jpg" class="speaker-img"><div class="speaker-name">Dr. William Dewar<div class="speaker-descript">FSU / Earth, Ocean and Atmospheric Science</div></div>
+                    <div class="speakers-row">
+                        <!-- Speaker 6-->
+                        <div class="speaker">
+                            <img src="images/unofficial-debi.jpg"  alt="Photo of Man Cheung" class="speaker-img"><div class="speaker-name">Dr. Trelani Chapman<div class="speaker-descript">University of Alberta / Social Sciences</div></div>
+                        </div>
+                        <!-- Speaker 7-->
+                        <div class="speaker">
+                            <img src="images/unofficial-chris-smith.jpg"  alt="Photo of Man Cheung" class="speaker-img"><div class="speaker-name">Dr. William Dewar<div class="speaker-descript">FSU / Earth, Ocean and Atmospheric Science</div></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -417,13 +421,13 @@ Schedule section has 3 columns:
                 </div>
             </div>
         </div>
-    <div class="pure-u-1-24 pure-u-sm-1-24 schedule-rpad"></div>
+        <div class="pure-u-sm-1-24 pure-u-1-24 schedule-rpad"></div>
     </div>
 <!-- Schedule: break -->
     <div class="pure-g">
-        <div class="pure-u-1-24 pure-u-sm-1-24 schedule-lpad"></div>
-        <div class="pure-u-1-6 pure-u-sm-2-24 schedule-l"></div>
-        <div class="pure-u-3-4 pure-u-sm-7-8 schedule-r">
+        <div class="pure-u-sm-1-24 pure-u-1-24 schedule-lpad"></div>
+        <div class="pure-u-sm-1-6 pure-u-2-24 schedule-l"></div>
+        <div class="pure-u-sm-3-4 pure-u-7-8 schedule-r">
             <!-- Schedule: timetable: welcome-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-6 pure-u-sm-1-12 schedule-time dim">
@@ -437,40 +441,40 @@ Schedule section has 3 columns:
                 </div>
             </div>
         </div>
-        <div class="pure-u-1-24 pure-u-sm-1-24 schedule-rpad"></div>
+        <div class="pure-u-sm-1-24 pure-u-1-24 schedule-rpad"></div>
     </div>
 
 <!-- Schedule: nonacademic -->
     <div class="pure-g vspace">
-        <div class="pure-u-1-12 pure-u-sm-1-24 schedule-lpad"></div>
-        <div class="pure-u-1-12 pure-u-sm-1-24 schedule-l">
+        <div class="pure-u-sm-1-12 schedule-lpad"></div>
+        <div class="pure-u-sm-1-12 pure-u-1-12 schedule-l">
            <div class="descript">
                 Nonacademic<br>           
            </div>
         </div>
-        <div class="pure-u-1-24 pure-u-sm-1-24 bar-l schedule-lr"></div>
-        <div class="pure-u-3-4 pure-u-sm-5-6 schedule-r">
+        <div class="pure-u-sm-1-24 pure-u-1-24 bar-l schedule-lr"></div>
+        <div class="pure-u-sm-3-4 pure-u-5-6 schedule-r">
            <!-- Schedule: timetable: general talk-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-6 pure-u-sm-1-12 schedule-time">
-                    1:20
+                    3:05
                 </div>
                 <div class="pure-u-1-6 pure-u-sm-1-24"></div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
                         General Talk
                     </div>
-                    <!-- Speaker 3-->
+                    <!-- Speaker 7-->
                     <div class="speaker">
-                        <img src="images/unofficial-chris-smith.jpg" class="speaker-img">
-                        <div class="speaker-name">Dr. Kenneth Hanson<div class="speaker-descript">FSU / Chemistry</div></div>
+                        <img src="images/unofficial-chris-smith.jpg"  alt="Photo of Man Cheung" class="speaker-img">
+                        <div class="speaker-name">Dr. Tracy Costello<div class="speaker-descript">FSU / Chemistry</div></div>
                     </div>
                 </div>
             </div>
             <!-- Schedule: timetable: Panel discussion-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-6 pure-u-sm-1-12 schedule-time">
-                    1:50
+                    3:35
                 </div>
                 <div class="pure-u-1-6 pure-u-sm-1-24"></div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
@@ -479,26 +483,26 @@ Schedule section has 3 columns:
                     </div>
                     <!-- Speaker 4-->
                     <div class="speaker">
-                        <img src="images/unofficial-debi.jpg" class="speaker-img"><div class="speaker-name">Dr. Francesca Bernardi<div class="speaker-descript">Worchester Polytechnic Institute / Mathematics</div></div>
+                        <img src="images/unofficial-debi.jpg"  alt="Photo of Man Cheung" class="speaker-img"><div class="speaker-name">Dr. Nathan Crock<div class="speaker-descript">Worchester Polytechnic Institute / Mathematics</div></div>
                     </div>
                     <!-- Speaker 5-->
                     <div class="speaker">
-                        <img src="images/unofficial-chris-smith.jpg" class="speaker-img"><div class="speaker-name">Dr. Erminia Fardone<div class="speaker-descript">University of Miami / Neuroscience</div></div>
+                        <img src="images/unofficial-chris-smith.jpg"  alt="Photo of Man Cheung" class="speaker-img"><div class="speaker-name">Dr. Anne Krook<div class="speaker-descript">University of Miami / Neuroscience</div></div>
                     </div>
                     <!-- Speaker 6-->
                     <div class="speaker">
-                        <img src="images/unofficial-debi.jpg" class="speaker-img"><div class="speaker-name">Dr. Trelani Chapman<div class="speaker-descript">University of Alberta / Social Sciences</div></div>
+                        <img src="images/unofficial-debi.jpg"  alt="Photo of Man Cheung" class="speaker-img"><div class="speaker-name">Dr. Troy Lowry<div class="speaker-descript">University of Alberta / Social Sciences</div></div>
                     </div>
                     <!-- Speaker 7-->
                     <div class="speaker">
-                        <img src="images/unofficial-chris-smith.jpg" class="speaker-img"><div class="speaker-name">Dr. William Dewar<div class="speaker-descript">FSU / Earth, Ocean and Atmospheric Science</div></div>
+                        <img src="images/unofficial-chris-smith.jpg"  alt="Photo of Man Cheung" class="speaker-img"><div class="speaker-name">Dr. William Dewar<div class="speaker-descript">FSU / Earth, Ocean and Atmospheric Science</div></div>
                     </div>
                 </div>
             </div>
             <!-- Schedule: timetable: breakout rooms-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-6 pure-u-sm-1-12 schedule-time">
-                    2:20
+                    4:05
                 </div>
                 <div class="pure-u-1-6 pure-u-sm-1-24"></div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
@@ -517,14 +521,14 @@ Schedule section has 3 columns:
                 </div>
             </div>
         </div>
-    <div class="pure-u-1-24 pure-u-sm-1-24 schedule-rpad"></div>
+        <div class="pure-u-sm-1-24 pure-u-1-24 schedule-rpad"></div>
     </div>
 
 <!-- Schedule: closing, dinner -->
 <div class="pure-g">
-        <div class="pure-u-1-24 pure-u-sm-1-24 schedule-lpad"></div>
-        <div class="pure-u-1-6 pure-u-sm-2-24 schedule-l"></div>
-        <div class="pure-u-3-4 pure-u-sm-7-8 schedule-r">
+        <div class="pure-u-sm-1-24 pure-u-1-24 schedule-lpad"></div>
+        <div class="pure-u-sm-1-6 pure-u-2-24 schedule-l"></div>
+        <div class="pure-u-sm-3-4 pure-u-7-8 schedule-r">
             <!-- Schedule: timetable: closing-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-6 pure-u-sm-1-12 schedule-time">
@@ -537,7 +541,7 @@ Schedule section has 3 columns:
                     </div>
                     <!-- Speaker 13-->
                     <div class="speaker">
-                        <img src="images/unofficial-debi.jpg" class="speaker-img">
+                        <img src="images/unofficial-debi.jpg"  alt="Photo of Man Cheung" class="speaker-img">
                         <div class="speaker-name">Dean Riley<div class="speaker-descript">FSU / Dean / Dean</div></div>
                     </div>
                 </div>
@@ -556,41 +560,36 @@ Schedule section has 3 columns:
                 </div>
             </div>
         </div>
-        <div class="pure-u-1-24 pure-u-sm-1-24 schedule-rpad"></div>
+        <div class="pure-u-sm-1-24 pure-u-1-24 schedule-rpad"></div>
     </div>
 </div>
     
 <!-- 
 -----------------------------------------------------------
-Contact section
+about section
 -----------------------------------------------------------
 -->
-<div id="contact">
-    <div class="pure-g">
-        <div class="pure-u-5-24 pure-u-sm-1-8">
+<div id="about">
+    <div class="pure-g vspace-below">
+        <div class="pure-u-sm-5-24 pure-u-1-8">
         </div>
-        <div class="pure-u-3-4 pure-u-sm-5-6">
-            <h2>Contacts</h2>
-             Email  <a href="mailto:opda-info@fsu.edu"> opda-info@fsu.edu </a>.
-                <br><br>
-                Organized by the <a href="https://opda.fsu.edu/fsu-pda"> Florida State University Postdoctoral Association. </a>
-                <br><br>
-                Organizing Committee is Veronica Mellado De La Cruz, Nuria Gutierrez, Luna Hiron, Mohammad Nooranidoost, <a href="https://mancheun.github.io/index.html"> Man Cheung Tsui </a>, April Yun
-                <br><br><br>
+        <div class="pure-u-sm-3-4 pure-u-5-6">
+            <h2>ABOUT</h2>
+            <p>This Spring Event organized by the <a href="https://opda.fsu.edu/fsu-pda">Florida State University Postdoctoral Association</a> features talks to help postdocs navigate the next steps in their career.</p>
+            <p>The Organizing Committee is <a href="https://www.linkedin.com/in/nuria-gutierrez-157a021b9">Nuria Gutierrez</a>, <a href="https://lunahiron.github.io/">Luna Hiron</a>, Veronica Mellado De La Cruz, <a href="http://nooranidoost.com/">Mohammad Nooranidoost</a>, <a href="https://mancheun.github.io/">Man Cheung Tsui</a>, April Yun</p>
+            <p>Questions? Email  <a href="mailto:opda-info@fsu.edu">opda-info@fsu.edu</a>.</p>
+            
         </div>
-        <div class="pure-u-1-24 pure-u-sm-1-24"></div>
     </div>
 </div>
 <footer>
     <div class="pure-g">
-        <div class="pure-u-5-24 pure-u-sm-1-8">
+        <div class="pure-u-sm-5-24 pure-u-1-8">
         </div>
-        <div class="pure-u-3-4 pure-u-sm-5-6 footer-content">
-            <br><br><br>
-            Designed by <a href="https://github.com/rockie195"> Christian Gomez </a>, <a href="https://github.com/cdjuarez"> Carlos Juarez </a>, <a href="https://mancheun.github.io/index.html"> Man Cheung Tsui </a>
-            <br><br><br>
+        <div class="pure-u-sm-3-4 pure-u-5-6 footer-content">
+            Designed by <a href="https://github.com/rockie195">Christian Gomez</a>, <a href="https://github.com/cdjuarez">Carlos Juarez</a>, and <a href="https://mancheun.github.io/"> Man Cheung Tsui</a> with <a href="https://purecss.io/">Pure CSS</a>
         </div>
-        <div class="pure-u-1-24 pure-u-sm-1-24">
+        <div class="pure-u-sm-1-24 pure-u-1-24">
         </div>
     </div>
 </footer>
