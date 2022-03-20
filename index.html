@@ -16,6 +16,43 @@
 
 <style>
     /* ----------------------------------------------------------------
+    Navbar Style
+    ---------------------------------------------------------------- */
+        html {
+        scroll-behavior: smooth;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-bottom-style: solid;
+            border-bottom-width: 10;
+            border-bottom-color: #fc9;
+            overflow: hidden;
+            background-color: #FF6600;
+            }
+
+        li {
+            float: left;
+            }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+        li a:hover:not(.active) {
+            background-color: #FFFFFF;
+            }
+
+        .active {
+                background-color: #FF6600;
+                }
+    /* ----------------------------------------------------------------
     General styles
     ---------------------------------------------------------------- */
     html,button, input, select, textarea,.pure-g [class *= "pure-u"] {
@@ -219,10 +256,11 @@
 Navbar
 -----------------------------------------------------------
 -->
-
-
-
-
+<ul>
+    <li style="float:right"><a class="active" href="#Organizer">Organizer</a></li>
+    <li style="float:right"><a class="active" href="#Schedule">Schedule</a></li>
+    <li style="float:right"><a  class="active" href="#Register">Register</a></li>
+</ul>
 <!-- 
 -----------------------------------------------------------
 Above fold section
