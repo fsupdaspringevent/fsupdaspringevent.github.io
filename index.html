@@ -1,16 +1,13 @@
-<!doctype html><html lang="en-US"><head><meta charset='utf-8'><link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html lang="en-US"><head><meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
-
 <style>
-    /* ----------------------------------------------------------------
-    Grid from Pure CSS
-    ---------------------------------------------------------------- */
-    @media screen and (min-width:35.5em){.pure-u-sm-1,.pure-u-sm-1-1,.pure-u-sm-1-12,.pure-u-sm-1-2,.pure-u-sm-1-24,.pure-u-sm-1-3,.pure-u-sm-1-4,.pure-u-sm-1-5,.pure-u-sm-1-6,.pure-u-sm-1-8,.pure-u-sm-10-24,.pure-u-sm-11-12,.pure-u-sm-11-24,.pure-u-sm-12-24,.pure-u-sm-13-24,.pure-u-sm-14-24,.pure-u-sm-15-24,.pure-u-sm-16-24,.pure-u-sm-17-24,.pure-u-sm-18-24,.pure-u-sm-19-24,.pure-u-sm-2-24,.pure-u-sm-2-3,.pure-u-sm-2-5,.pure-u-sm-20-24,.pure-u-sm-21-24,.pure-u-sm-22-24,.pure-u-sm-23-24,.pure-u-sm-24-24,.pure-u-sm-3-24,.pure-u-sm-3-4,.pure-u-sm-3-5,.pure-u-sm-3-8,.pure-u-sm-4-24,.pure-u-sm-4-5,.pure-u-sm-5-12,.pure-u-sm-5-24,.pure-u-sm-5-5,.pure-u-sm-5-6,.pure-u-sm-5-8,.pure-u-sm-6-24,.pure-u-sm-7-12,.pure-u-sm-7-24,.pure-u-sm-7-8,.pure-u-sm-8-24,.pure-u-sm-9-24{display:inline-block;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}.pure-u-sm-1-24{width:4.1667%}.pure-u-sm-1-12,.pure-u-sm-2-24{width:8.3333%}.pure-u-sm-1-8,.pure-u-sm-3-24{width:12.5%}.pure-u-sm-1-6,.pure-u-sm-4-24{width:16.6667%}.pure-u-sm-1-5{width:20%}.pure-u-sm-5-24{width:20.8333%}.pure-u-sm-1-4,.pure-u-sm-6-24{width:25%}.pure-u-sm-7-24{width:29.1667%}.pure-u-sm-1-3,.pure-u-sm-8-24{width:33.3333%}.pure-u-sm-3-8,.pure-u-sm-9-24{width:37.5%}.pure-u-sm-2-5{width:40%}.pure-u-sm-10-24,.pure-u-sm-5-12{width:41.6667%}.pure-u-sm-11-24{width:45.8333%}.pure-u-sm-1-2,.pure-u-sm-12-24{width:50%}.pure-u-sm-13-24{width:54.1667%}.pure-u-sm-14-24,.pure-u-sm-7-12{width:58.3333%}.pure-u-sm-3-5{width:60%}.pure-u-sm-15-24,.pure-u-sm-5-8{width:62.5%}.pure-u-sm-16-24,.pure-u-sm-2-3{width:66.6667%}.pure-u-sm-17-24{width:70.8333%}.pure-u-sm-18-24,.pure-u-sm-3-4{width:75%}.pure-u-sm-19-24{width:79.1667%}.pure-u-sm-4-5{width:80%}.pure-u-sm-20-24,.pure-u-sm-5-6{width:83.3333%}.pure-u-sm-21-24,.pure-u-sm-7-8{width:87.5%}.pure-u-sm-11-12,.pure-u-sm-22-24{width:91.6667%}.pure-u-sm-23-24{width:95.8333%}.pure-u-sm-1,.pure-u-sm-1-1,.pure-u-sm-24-24,.pure-u-sm-5-5{width:100%}}
-    /* ----------------------------------------------------------------
-    Navbar Style
-    ---------------------------------------------------------------- */
+/* Pure CSS Grid */
+    .pure-g{letter-spacing:-.31em;text-rendering:optimizespeed;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;-ms-flex-line-pack:start;align-content:flex-start}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){table .pure-g{display:block}}.opera-only :-o-prefocus,.pure-g{word-spacing:-0.43em}.pure-u{display:inline-block;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}.pure-g [class*=pure-u]{font-family:sans-serif}.pure-u-1,.pure-u-1-1,.pure-u-1-12,.pure-u-1-2,.pure-u-1-24,.pure-u-1-3,.pure-u-1-4,.pure-u-1-6,.pure-u-1-8,.pure-u-10-24,.pure-u-11-12,.pure-u-11-24,.pure-u-12-24,.pure-u-13-24,.pure-u-14-24,.pure-u-15-24,.pure-u-16-24,.pure-u-17-24,.pure-u-18-24,.pure-u-19-24,.pure-u-2-24,.pure-u-2-3,.pure-u-20-24,.pure-u-21-24,.pure-u-22-24,.pure-u-23-24,.pure-u-24-24,.pure-u-3-24,.pure-u-3-4,.pure-u-3-8,.pure-u-4-24,.pure-u-5-12,.pure-u-5-24,.pure-u-5-6,.pure-u-5-8,.pure-u-6-24,.pure-u-7-12,.pure-u-7-24,.pure-u-7-8,.pure-u-8-24,.pure-u-9-24{display:inline-block;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}.pure-u-1-24{width:4.1667%}.pure-u-1-12,.pure-u-2-24{width:8.3333%}.pure-u-1-8,.pure-u-3-24{width:12.5%}.pure-u-1-6,.pure-u-4-24{width:16.6667%}.pure-u-5-24{width:20.8333%}.pure-u-1-4,.pure-u-6-24{width:25%}.pure-u-7-24{width:29.1667%}.pure-u-1-3,.pure-u-8-24{width:33.3333%}.pure-u-3-8,.pure-u-9-24{width:37.5%}.pure-u-10-24,.pure-u-5-12{width:41.6667%}.pure-u-11-24{width:45.8333%}.pure-u-1-2,.pure-u-12-24{width:50%}.pure-u-13-24{width:54.1667%}.pure-u-14-24,.pure-u-7-12{width:58.3333%}.pure-u-15-24,.pure-u-5-8{width:62.5%}.pure-u-16-24,.pure-u-2-3{width:66.6667%}.pure-u-17-24{width:70.8333%}.pure-u-18-24,.pure-u-3-4{width:75%}.pure-u-19-24{width:79.1667%}.pure-u-20-24,.pure-u-5-6{width:83.3333%}.pure-u-21-24,.pure-u-7-8{width:87.5%}.pure-u-11-12,.pure-u-22-24{width:91.6667%}.pure-u-23-24{width:95.8333%}.pure-u-1,.pure-u-1-1,.pure-u-24-24{width:100%}
+/* Pure CSS Responsive Grid */
+    @media screen and (min-width:35.5em){.pure-u-sm-1,.pure-u-sm-1-1,.pure-u-sm-1-12,.pure-u-sm-1-2,.pure-u-sm-1-24,.pure-u-sm-1-3,.pure-u-sm-1-4,.pure-u-sm-1-6,.pure-u-sm-1-8,.pure-u-sm-10-24,.pure-u-sm-11-12,.pure-u-sm-11-24,.pure-u-sm-12-24,.pure-u-sm-13-24,.pure-u-sm-14-24,.pure-u-sm-15-24,.pure-u-sm-16-24,.pure-u-sm-17-24,.pure-u-sm-18-24,.pure-u-sm-19-24,.pure-u-sm-2-24,.pure-u-sm-2-3,.pure-u-sm-20-24,.pure-u-sm-21-24,.pure-u-sm-22-24,.pure-u-sm-23-24,.pure-u-sm-24-24,.pure-u-sm-3-24,.pure-u-sm-3-4,.pure-u-sm-3-8,.pure-u-sm-4-24,.pure-u-sm-5-12,.pure-u-sm-5-24,.pure-u-sm-5-8,.pure-u-sm-6-24,.pure-u-sm-7-12,.pure-u-sm-7-24,.pure-u-sm-7-8,.pure-u-sm-8-24,.pure-u-sm-9-24{display:inline-block;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}.pure-u-sm-1-24{width:4.1667%}.pure-u-sm-1-12,.pure-u-sm-2-24{width:8.3333%}.pure-u-sm-1-8,.pure-u-sm-3-24{width:12.5%}.pure-u-sm-1-6,.pure-u-sm-4-24{width:16.6667%}.pure-u-sm-5-24{width:20.8333%}.pure-u-sm-1-4,.pure-u-sm-6-24{width:25%}.pure-u-sm-7-24{width:29.1667%}.pure-u-sm-1-3,.pure-u-sm-8-24{width:33.3333%}.pure-u-sm-3-8,.pure-u-sm-9-24{width:37.5%}.pure-u-sm-10-24,.pure-u-sm-5-12{width:41.6667%}.pure-u-sm-11-24{width:45.8333%}.pure-u-sm-1-2,.pure-u-sm-12-24{width:50%}.pure-u-sm-13-24{width:54.1667%}.pure-u-sm-14-24,.pure-u-sm-7-12{width:58.3333%}.pure-u-sm-15-24,.pure-u-sm-5-8{width:62.5%}.pure-u-sm-16-24,.pure-u-sm-2-3{width:66.6667%}.pure-u-sm-17-24{width:70.8333%}.pure-u-sm-18-24,.pure-u-sm-3-4{width:75%}.pure-u-sm-19-24{width:79.1667%}.pure-u-sm-20-24,.pure-u-sm-5-6{width:83.3333%}.pure-u-sm-21-24,.pure-u-sm-7-8{width:87.5%}.pure-u-sm-11-12,.pure-u-sm-22-24{width:91.6667%}.pure-u-sm-23-24{width:95.8333%}.pure-u-sm-1,.pure-u-sm-1-1,.pure-u-sm-24-24,{width:100%}}
+/* Navbar Style */
     nav{
         border-bottom: 1px solid black;
         padding: 6vh 0 4vh 6vw;
@@ -26,33 +23,25 @@
     #links{
         display: inline-block;
     }
-    /* ----------------------------------------------------------------
-    General styles
-    ---------------------------------------------------------------- */
-    html,button, input, select, textarea,.pure-g [class *= "pure-u"] {
-    /* Set your content font stack here; see https://purecss.io/grids/#using-grids-with-your-font-family */
-    font-family: "Nunito", sans-serif;
-    }
-    html{
-        scroll-behavior: smooth;
-    }
+/* General Style */
+    html,.pure-g [class *= "pure-u"]{font-family: "Nunito", sans-serif;}html{scroll-behavior: smooth;line-height:1.18;-webkit-text-size-adjust:100%;}body{margin:0}main{display:block}
     h1{
         font-weight: 900;
-        font-size: 5vw; /*Fallback for max() */
+        font-size: 5vw; /* Fallback for max() */
         font-size: max(2rem,5vw);
-        margin-bottom: 0.2em;
+        margin-bottom: .2em;
     }
     h2{
         font-size: 8vw;
         font-size: max(3rem,8vw);
         font-family: "Nunito";
         color: #ed6507;
-        margin-bottom: 0.2em;
+        margin-bottom: .2em;
     }
-    .vspace{
+    .pad-t{
         padding-top: 1em;
     }
-    .vspace-below{
+    .pad-b{
         padding-bottom: 5em;
     }
     a{
@@ -66,7 +55,7 @@
         color: #ed6507;
     }
     .dim{
-        opacity:0.5;
+        opacity:.5;
     }
     .est{
         font-weight: bold;
@@ -78,9 +67,7 @@
     ::selection {
         background: yellow;
     }
-    /* ----------------------------------------------------------------
-    Above fold
-    ---------------------------------------------------------------- */
+/* Above fold */
     .above-fold-lpad{
         background-color: #ffebd6;
     }
@@ -116,9 +103,7 @@
         padding-top: 5vh;
         font-family: "open sans";
     }
-    /* ----------------------------------------------------------------
-    Schedule id's 
-    ---------------------------------------------------------------- */
+/* Schedule id's  */
     #schedule{
         background-color: #ffebd6;
         border-top: 1px solid #ed6507;
@@ -132,7 +117,7 @@
     .location-title{
         font-size: 70%;
         font-weight: 900;
-        padding-bottom: 0.4em;
+        padding-bottom: .4em;
     }
     .descript{
         -webkit-transform: rotate(-90deg);
@@ -143,8 +128,8 @@
         color: #ed6507;
         position: relative;
         top: 50%;
-        font-size: 4rem;
-        font-size: clamp(1.5rem,3vw,4rem);
+        font-size: 1.2rem;
+        font-size: clamp(1.2rem,3vw,2rem);
     }
     .bar-l{
         border-left: 3px solid #ed6507;
@@ -161,15 +146,12 @@
     }
     .schedule-goto{
         font-family: "Open Sans", sans-serif;
-        font-size: 0.9rem;
+        font-size: .9rem;
     }
     .schedule-goto ul{
         list-style-type: none;
     }
-    /* ----------------------------------------------------------------
-    Speaker information
-    Try https://1linelayouts.glitch.me/ if this doesn't work
-    ---------------------------------------------------------------- */
+/* Speaker info */
     .speaker{
         margin-top: 1em;
         display:inline-flex;
@@ -180,14 +162,13 @@
         width:80px;
         border-radius:50%;
         margin-right: 1em;
-        -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        -ms-transition: all 0.2s ease;
-        transition: all 0.2s ease;
+        -webkit-transition: all .2s ease;
+        -moz-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+        transition: all .2s ease;
     }
     .speaker-img:hover{
-        
         -webkit-transform:scale(1.1); /* Safari and Chrome */
         -moz-transform:scale(1.1); /* Firefox */
         -ms-transform:scale(1.1); /* IE 9 */
@@ -195,18 +176,15 @@
          transform:scale(1.1);
     }
     .speaker-name{
-        padding-top:0.6em;
         display: inline-block;
-        max-width: 9em;
+        max-width: 10rem;
     }
     .speaker-descript{
-        padding-top:0.1em;
-        font-size: 75%;
+        padding-top:.1em;
+        font-size: 65%;
         font-family: "Open Sans", sans-serif;
     }
-    /* ----------------------------------------------------------------
-    Button 
-    ---------------------------------------------------------------- */
+/* Button */
     #button-register{
         padding: 15vh 0 10vh 0;
     }
@@ -215,15 +193,15 @@
         font-size: 1.7vw;
         font-size: max(1.5rem,1.7vw);
         color: #ed6507;
-        border-radius: 0.8em;
-        padding: 0.4em;
+        border-radius: .8em;
+        padding: .4em;
         border: 1px solid #FF6600;
         text-decoration-line: none;
-        -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        -ms-transition: all 0.2s ease;
-        transition: all 0.2s ease;
+        -webkit-transition: all .2s ease;
+        -moz-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+        transition: all .2s ease;
     }
     .button:hover{
         background: #ed6507;
@@ -233,9 +211,7 @@
     .l-box {
         padding: 1em;
     }
-    /* ----------------------------------------------------------------
-    About and footer 
-    ---------------------------------------------------------------- */
+/* About, footer */
     #about{
         background-color: #ffebd6;
         border-top: 1px solid #ed6507;
@@ -248,7 +224,7 @@
     .footer-content{
         padding-top: 4em;
         padding-bottom: 3em;
-        font-size: 0.8rem;
+        font-size: .8rem;
     }
     footer a{
         color:white;
@@ -258,11 +234,9 @@
 <title>FSU PDA SPRING EVENT.</title>
 </head>
 <body>
-<!-- 
------------------------------------------------------------
+<!-------------------------------------------------------------
 Navigation section
------------------------------------------------------------
--->
+------------------------------------------------------------->
 <div class="pure-g">
     <div class="pure-u-1 pure-u-sm-7-12 above-fold-lpad">
         <nav role="navigation">
@@ -270,11 +244,9 @@ Navigation section
         </nav>
     </div>
 </div>
-<!-- 
------------------------------------------------------------
+<!-------------------------------------------------------------
 Above fold section
------------------------------------------------------------
--->
+------------------------------------------------------------->
 <div class="pure-g">
     <div class="pure-u-1-24 pure-u-sm-1-24 above-fold-lpad"></div>
     <div class="pure-u-23-24 pure-u-sm-13-24 above-fold-left">
@@ -292,11 +264,9 @@ Above fold section
         </div>
     </div>
 </div>
-<!-- 
------------------------------------------------------------
+<!-------------------------------------------------------------
 Schedule section
------------------------------------------------------------
--->
+------------------------------------------------------------->
 <div id="schedule">
 
 <!-- Schedule: heading, location descriptions -->
@@ -306,11 +276,11 @@ Schedule section
         <div class="pure-u-sm-3-4 pure-u-7-8 schedule-r">
             <h2>SCHEDULE</h2>
             <div class="location-title">VIRTUAL LOCATION</div>
-            <div class="location"> Zoom (the participant will receive a Zoom link after registration).</div>
+            <div class="location"> Zoom (participants will receive Zoom link after registration).</div>
             <div class="location-title">PHYSICAL LOCATION</div>
             <div class="location">Nancy Marcus Great Hall inside the <a href="https://goo.gl/maps/3bRAR7ngt9acPc8Z6">Honors, Scholars, and Fellows (HSF) House</a>. Breakout rooms are held in other rooms at HSF.</div>
             <!-- Schedule: timetable: welcome-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
                     1:00 <span class="est">EST</span>
                 </div>
@@ -326,7 +296,7 @@ Schedule section
                 </div>
             </div>
             <!-- Schedule: timetable: introduction-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
                     1:05 <span class="est">EST</span>
                 </div>
@@ -343,9 +313,8 @@ Schedule section
             </div>
         </div>
     </div>
-
 <!-- Schedule: academic -->
-    <div class="pure-g vspace">
+    <div class="pure-g pad-t">
         <div class="pure-u-sm-1-12 schedule-lpad"></div>
         <div class="pure-u-sm-1-12 pure-u-1-12 schedule-l">
            <div class="descript">
@@ -355,7 +324,7 @@ Schedule section
         <div class="pure-u-sm-1-24 pure-u-1-24 bar-l schedule-lr"></div>
         <div class="pure-u-sm-3-4 pure-u-5-6 schedule-r">
            <!-- Schedule: timetable: general talk-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
                     1:20 <span class="est">EST</span>
                 </div>
@@ -365,13 +334,13 @@ Schedule section
                     </div>
                     <!-- Speaker 3-->
                     <div class="speaker">
-                        <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img">
-                        <div class="speaker-name">Dr. Kenneth Hanson<div class="speaker-descript">FSU / Chemistry</div></div>
+                        <img src="images/hanson.png"  alt="Photo of Dr. Kenneth Hanson" class="speaker-img">
+                        <div class="speaker-name">Dr. Kenneth Hanson<div class="speaker-descript">FSU / Chemistry / Biochemistry / Associate Professor</div></div>
                     </div>
                 </div>
             </div>
             <!-- Schedule: timetable: Panel discussion-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
                     1:50 <span class="est">EST</span>
                 </div>
@@ -381,11 +350,11 @@ Schedule section
                     </div>
                     <!-- Speaker 4-->
                         <div class="speaker">
-                            <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img"><div class="speaker-name">Dr. Francesca Bernardi<div class="speaker-descript">Worchester Polytechnic Institute / Mathematics</div></div>
+                            <img src="images/bernardi.png"  alt="Francesca Bernardi" class="speaker-img"><div class="speaker-name">Dr. Francesca Bernardi<div class="speaker-descript">Worchester Polytechnic Institute / Mathematics / Mechanical Engineering affil. / Assistant Professor</div></div>
                         </div>
                         <!-- Speaker 5-->
                         <div class="speaker">
-                            <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img"><div class="speaker-name">Dr. Erminia Fardone<div class="speaker-descript">University of Miami / Neuroscience</div></div>
+                            <img src="images/fardone.png"  alt="Erminia Fardone" class="speaker-img"><div class="speaker-name">Dr. Erminia Fardone<div class="speaker-descript">University of Miami / Miller School of Medicine / Assistant Scientist</div></div>
                         </div>
                         <!-- Speaker 6-->
                         <div class="speaker">
@@ -393,12 +362,12 @@ Schedule section
                         </div>
                         <!-- Speaker 7-->
                         <div class="speaker">
-                            <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img"><div class="speaker-name">Dr. William Dewar<div class="speaker-descript">FSU / Earth, Ocean and Atmospheric Science</div></div>
+                            <img src="images/dewar.png"  alt="William Dewar" class="speaker-img"><div class="speaker-name">Dr. William Dewar<div class="speaker-descript">FSU / Earth, Ocean and Atmospheric Science / Pierre Welander Professor</div></div>
                         </div>
                 </div>
             </div>
             <!-- Schedule: timetable: breakout rooms-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
                     2:20 <span class="est">EST</span>
                 </div>
@@ -406,7 +375,7 @@ Schedule section
                     <div class="schedule-title">
                         Breakout Rooms
                     </div>
-                    <div class="schedule-goto vspace">
+                    <div class="schedule-goto pad-t">
                         <span class="schedule-goto-l">
                             GO TO
                         </span>
@@ -430,7 +399,7 @@ Schedule section
         <div class="pure-u-sm-1-6 pure-u-2-24 schedule-l"></div>
         <div class="pure-u-sm-3-4 pure-u-7-8 schedule-r">
             <!-- Schedule: timetable: welcome-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time dim">
                     2:50 <span class="est">EST</span>
                 </div>
@@ -442,19 +411,18 @@ Schedule section
             </div>
         </div>
     </div>
-
 <!-- Schedule: nonacademic -->
-    <div class="pure-g vspace">
+    <div class="pure-g pad-t">
         <div class="pure-u-sm-1-12 schedule-lpad"></div>
         <div class="pure-u-sm-1-12 pure-u-1-12 schedule-l">
            <div class="descript">
-                Nonacademic       
+                Non&#8209;academic
            </div>
         </div>
         <div class="pure-u-sm-1-24 pure-u-1-24 bar-l schedule-lr"></div>
         <div class="pure-u-sm-3-4 pure-u-5-6 schedule-r">
            <!-- Schedule: timetable: general talk-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
                     3:05 <span class="est">EST</span>
                 </div>
@@ -464,13 +432,13 @@ Schedule section
                     </div>
                     <!-- Speaker 7-->
                     <div class="speaker">
-                        <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img">
-                        <div class="speaker-name">Dr. Tracy Costello<div class="speaker-descript">FSU / Chemistry</div></div>
+                        <img src="images/costello.png"  alt="Photo of Dr. Tracy Costello" class="speaker-img">
+                        <div class="speaker-name">Dr. Tracy Costello<div class="speaker-descript">University of South Florida / Postdoctoral Affairs &amp; Graduate Student Development / Director</div></div>
                     </div>
                 </div>
             </div>
             <!-- Schedule: timetable: Panel discussion-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
                     3:35 <span class="est">EST</span>
                 </div>
@@ -480,15 +448,15 @@ Schedule section
                     </div>
                     <!-- Speaker 4-->
                     <div class="speaker">
-                        <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img"><div class="speaker-name">Dr. Nathan Crock<div class="speaker-descript">Worchester Polytechnic Institute / Mathematics</div></div>
+                        <img src="images/crock.png"  alt="Nathan Crock" class="speaker-img"><div class="speaker-name">Dr. Nathan Crock<div class="speaker-descript">FSU / Scientific Computing // NewSci Labs / Director</div></div>
                     </div>
                     <!-- Speaker 5-->
                     <div class="speaker">
-                        <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img"><div class="speaker-name">Dr. Anne Krook<div class="speaker-descript">University of Miami / Neuroscience</div></div>
+                        <img src="images/krook.png"  alt="Anne Krook" class="speaker-img"><div class="speaker-name">Dr. Anne Krook<div class="speaker-descript">Consultant</div></div>
                     </div>
                     <!-- Speaker 6-->
                     <div class="speaker">
-                        <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img"><div class="speaker-name">Dr. Troy Lowry<div class="speaker-descript">University of Alberta / Social Sciences</div></div>
+                        <img src="images/lowry.jpg"  alt="Troy Lowry" class="speaker-img"><div class="speaker-name">Dr. Troy Lowry<div class="speaker-descript">Institute for Defense Analyses / Research Analyst</div></div>
                     </div>
                     <!-- Speaker 7-->
                     <div class="speaker">
@@ -497,7 +465,7 @@ Schedule section
                 </div>
             </div>
             <!-- Schedule: timetable: breakout rooms-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
                     4:05 <span class="est">EST</span>
                 </div>
@@ -505,7 +473,7 @@ Schedule section
                     <div class="schedule-title">
                         Breakout Rooms
                     </div>
-                    <div class="schedule-goto vspace">
+                    <div class="schedule-goto pad-t">
                             GO TO
                             <ul>
                                 <li><span class="orange">GREAT HALL</span> for Nathan Crock</li>
@@ -518,14 +486,13 @@ Schedule section
             </div>
         </div>
     </div>
-
 <!-- Schedule: closing, dinner -->
 <div class="pure-g">
         <div class="pure-u-sm-1-24 pure-u-1-24 schedule-lpad"></div>
         <div class="pure-u-sm-1-6 pure-u-2-24 schedule-l"></div>
         <div class="pure-u-sm-3-4 pure-u-7-8 schedule-r">
             <!-- Schedule: timetable: closing-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
                     4:35 <span class="est">EST</span>
                 </div>
@@ -541,7 +508,7 @@ Schedule section
                 </div>
             </div>
             <!-- Schedule: timetable: dinner-->
-            <div class="pure-g vspace">
+            <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
                     5:00 <span class="est">EST</span>
                 </div>
@@ -549,28 +516,24 @@ Schedule section
                     <div class="schedule-title">
                         Dinner
                     </div>
-                    <div class="schedule-goto vspace vspace-below">GO TO <span class="orange">GREAT HALL</span></div>
+                    <div class="schedule-goto pad-t pad-b">GO TO <span class="orange">GREAT HALL</span></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    
-<!-- 
------------------------------------------------------------
+<!-------------------------------------------------------------
 about section
------------------------------------------------------------
--->
+------------------------------------------------------------->
 <div id="about">
-    <div class="pure-g vspace-below">
+    <div class="pure-g pad-b">
         <div class="pure-u-sm-5-24 pure-u-1-8">
         </div>
         <div class="pure-u-sm-3-4 pure-u-5-6">
             <h2>ABOUT</h2>
-            <p>This Spring Event organized by the <a href="https://opda.fsu.edu/fsu-pda">Florida State University Postdoctoral Association</a> features talks to help postdocs navigate the next steps in their career.</p>
+            <p>This Spring Event is organized by the <a href="https://opda.fsu.edu/fsu-pda">Florida State University Postdoctoral Association</a>. We feature talks to help postdocs navigate the next steps in their careers.</p>
             <p>The Organizing Committee is <a href="https://www.linkedin.com/in/nuria-gutierrez-157a021b9">Nuria Gutierrez</a>, <a href="https://lunahiron.github.io/">Luna Hiron</a>, Veronica Mellado De La Cruz, <a href="http://nooranidoost.com/">Mohammad Nooranidoost</a>, <a href="https://mancheun.github.io/">Man Cheung Tsui</a>, April Yun</p>
             <p>Questions? Email  <a href="mailto:opda-info@fsu.edu">opda-info@fsu.edu</a>.</p>
-            
         </div>
     </div>
 </div>
@@ -580,8 +543,6 @@ about section
         </div>
         <div class="pure-u-sm-3-4 pure-u-5-6 footer-content">
             Designed by <a href="https://github.com/rockie195">Christian Gomez</a>, <a href="https://github.com/cdjuarez">Carlos Juarez</a>, and <a href="https://mancheun.github.io/"> Man Cheung Tsui</a> with <a href="https://purecss.io/">Pure CSS</a>
-        </div>
-        <div class="pure-u-sm-1-24 pure-u-1-24">
         </div>
     </div>
 </footer>
