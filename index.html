@@ -38,13 +38,13 @@
     }
     h1{
         font-weight: 900;
-        font-size: 7vw; /*Fallback for clamp() */
-        font-size: clamp(2rem,7vw,4rem);
+        font-size: 5vw; /*Fallback for max() */
+        font-size: max(2rem,5vw);
         margin-bottom: 0.2em;
     }
     h2{
-        font-size: 7vw;
-        font-size: clamp(3rem,7vw,4rem);
+        font-size: 8vw;
+        font-size: max(3rem,8vw);
         font-family: "Nunito";
         color: #ed6507;
         margin-bottom: 0.2em;
@@ -68,6 +68,10 @@
     .dim{
         opacity:0.5;
     }
+    .est{
+        font-weight: bold;
+        font-size: 60%;
+    }
     ::-moz-selection {
         background: yellow;
     }
@@ -75,44 +79,41 @@
         background: yellow;
     }
     /* ----------------------------------------------------------------
-    Above fold id's 
+    Above fold
     ---------------------------------------------------------------- */
-    #above-fold-left-pad{
+    .above-fold-lpad{
         background-color: #ffebd6;
     }
-    #above-fold-left{
+    .above-fold-left{
         background-color: #ffebd6;
     }
-    #above-fold-right{
+    .above-fold-right{
         padding-top: 10vh;
         background-color: white;
         text-align: center;
     }
-    #above-fold-right-pad{
-    }
     #subtitle{
         padding-bottom: 8vh;
+        font-size: 1.7vw;
+        font-size: max(1.5rem,1.7vw);
         font-family: "open sans";
     }
     #subsubtitle{
-        font-size: 130%;
-        padding-bottom: 12vh;
+        font-size: 1.5vw;
+        font-size: max(1.3rem,1.5vw);
+        padding-bottom: 10vh;
         color: #ed6507;
         font-family: "open sans";
     }
-    #title-year{
+    #title-date{
         font-weight: bold;
-        font-size: 10vw;
-        font-size: clamp(3rem,10vw,7rem);
-    }
-    #subtitle-date{
-        padding-top: 6vh;
-        font-size: 1.4rem;
-        font-family: "open sans";
+        font-size: 5vw;
+        font-size: max(3rem,5vw);
     }
     #subtitle-time{
-        padding-top: 3vh;
-        font-size: 1.3rem;
+        font-size: 2vw;
+        font-size: max(1.5rem,2vw);
+        padding-top: 5vh;
         font-family: "open sans";
     }
     /* ----------------------------------------------------------------
@@ -142,7 +143,7 @@
         color: #ed6507;
         position: relative;
         top: 50%;
-        font-size: 3vw;
+        font-size: 4rem;
         font-size: clamp(1.5rem,3vw,4rem);
     }
     .bar-l{
@@ -151,12 +152,12 @@
     .schedule-time{
         color: #ed6507;
         font-weight: bold;
-        font-size: 1.5rem;
-        min-width: 3.8rem;
+        font-size: 1.4rem;
+        min-width: 3.9rem;
     }
     .schedule-title{
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .schedule-goto{
         font-family: "Open Sans", sans-serif;
@@ -207,12 +208,12 @@
     Button 
     ---------------------------------------------------------------- */
     #button-register{
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding: 15vh 0 10vh 0;
     }
     .button {
         background: white;
-        font-size: 120%;
+        font-size: 1.7vw;
+        font-size: max(1.5rem,1.7vw);
         color: #ed6507;
         border-radius: 0.8em;
         padding: 0.4em;
@@ -263,7 +264,7 @@ Navigation section
 -----------------------------------------------------------
 -->
 <div class="pure-g">
-    <div class="pure-u-1 pure-u-sm-2-3" id="above-fold-left-pad">
+    <div class="pure-u-1 pure-u-sm-7-12 above-fold-lpad">
         <nav role="navigation">
             <span id="brand"><a href="https://opda.fsu.edu/fsu-pda">FSU PDA</a> SPRING EVENT.</span> <div id="links"><a href="#button-register" role="button">REGISTER</a> / <a href="#schedule">SCHEDULE</a> / <a href="#about">ABOUT</a></div>
         </nav>
@@ -275,18 +276,17 @@ Above fold section
 -----------------------------------------------------------
 -->
 <div class="pure-g">
-    <div class="pure-u-1-24 pure-u-sm-1-24" id="above-fold-left-pad"></div>
-    <div class="pure-u-23-24 pure-u-sm-5-8" id="above-fold-left">
+    <div class="pure-u-1-24 pure-u-sm-1-24 above-fold-lpad"></div>
+    <div class="pure-u-23-24 pure-u-sm-13-24 above-fold-left">
         <div class="l-box">
-            <h1>PLANNING YOUR CAREER AFTER A POSTDOC</h1>
-          <div id="subtitle">academic / non-academic paths</div>
+            <h1>PLANNING YOUR CAREER AFTER A POSTDOC:</h1>
+          <div id="subtitle">academic and non-academic paths</div>
           <div id="subsubtitle">Free event for postdocs<br>Online and at Florida State University</div>
         </div>
     </div>
-    <div class="pure-u-1 pure-u-sm-1-3" id="above-fold-right">
+    <div class="pure-u-1 pure-u-sm-5-12 above-fold-right">
         <div class="l-box">
-            <div id="title-year">2022</div>
-            <div id="subtitle-date">May 6</div>
+            <div id="title-date">May 6th, 2022</div>
             <div id="subtitle-time">1 PM – 5 PM EST</div>
             <div id="button-register"><a class="button" href="https://fsu.qualtrics.com/jfe/form/SV_bErySmhvZT7De7A" role="button">Register</a></div>
         </div>
@@ -306,22 +306,33 @@ Schedule section
         <div class="pure-u-sm-3-4 pure-u-7-8 schedule-r">
             <h2>SCHEDULE</h2>
             <div class="location-title">VIRTUAL LOCATION</div>
-            <div class="location"> Zoom (check participant email for Zoom link).</div>
+            <div class="location"> Zoom (the participant will receive a Zoom link after registration).</div>
             <div class="location-title">PHYSICAL LOCATION</div>
             <div class="location">Nancy Marcus Great Hall inside the <a href="https://goo.gl/maps/3bRAR7ngt9acPc8Z6">Honors, Scholars, and Fellows (HSF) House</a>. Breakout rooms are held in other rooms at HSF.</div>
             <!-- Schedule: timetable: welcome-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    1:00
+                    1:00 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
-                        Introduction
+                        Welcome
                     </div>
                     <!-- Speaker 1-->
                     <div class="speaker">
                         <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img">
                         <div class="speaker-name">TBD<div class="speaker-descript"></div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Schedule: timetable: introduction-->
+            <div class="pure-g vspace">
+                <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
+                    1:05 <span class="est">EST</span>
+                </div>
+                <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
+                    <div class="schedule-title">
+                        Introduction: Going from Postdoc to Academic and Non-Academic Jobs
                     </div>
                     <!-- Speaker 2-->
                     <div class="speaker">
@@ -331,7 +342,6 @@ Schedule section
                 </div>
             </div>
         </div>
-        <div class="pure-u-sm-1-24 schedule-rpad"></div>
     </div>
 
 <!-- Schedule: academic -->
@@ -347,11 +357,11 @@ Schedule section
            <!-- Schedule: timetable: general talk-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    1:20
+                    1:20 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
-                        General Talk
+                        How to Succeed in Academia
                     </div>
                     <!-- Speaker 3-->
                     <div class="speaker">
@@ -363,7 +373,7 @@ Schedule section
             <!-- Schedule: timetable: Panel discussion-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    1:50
+                    1:50 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
@@ -390,7 +400,7 @@ Schedule section
             <!-- Schedule: timetable: breakout rooms-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    2:20
+                    2:20 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
@@ -422,7 +432,7 @@ Schedule section
             <!-- Schedule: timetable: welcome-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time dim">
-                    2:50
+                    2:50 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers dim">
                     <div class="schedule-title">
@@ -431,7 +441,6 @@ Schedule section
                 </div>
             </div>
         </div>
-        <div class="pure-u-sm-1-24 pure-u-1-24 schedule-rpad"></div>
     </div>
 
 <!-- Schedule: nonacademic -->
@@ -447,11 +456,11 @@ Schedule section
            <!-- Schedule: timetable: general talk-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    3:05
+                    3:05 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
-                        General Talk
+                        How to Transition to Non-Academic Jobs
                     </div>
                     <!-- Speaker 7-->
                     <div class="speaker">
@@ -463,7 +472,7 @@ Schedule section
             <!-- Schedule: timetable: Panel discussion-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    3:35
+                    3:35 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
@@ -490,7 +499,7 @@ Schedule section
             <!-- Schedule: timetable: breakout rooms-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    4:05
+                    4:05 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
@@ -508,7 +517,6 @@ Schedule section
                 </div>
             </div>
         </div>
-        <div class="pure-u-sm-1-24 pure-u-1-24 schedule-rpad"></div>
     </div>
 
 <!-- Schedule: closing, dinner -->
@@ -519,7 +527,7 @@ Schedule section
             <!-- Schedule: timetable: closing-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    4:35
+                    4:35 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
@@ -535,7 +543,7 @@ Schedule section
             <!-- Schedule: timetable: dinner-->
             <div class="pure-g vspace">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    4:35
+                    5:00 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
@@ -545,7 +553,6 @@ Schedule section
                 </div>
             </div>
         </div>
-        <div class="pure-u-sm-1-24 pure-u-1-24 schedule-rpad"></div>
     </div>
 </div>
     
