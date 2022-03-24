@@ -107,7 +107,7 @@
         background-image: url(./images/splash.svg);
         background-repeat: no-repeat;
         background-position: bottom right;
-        background-size: 35vw;
+        background-size: 40vw;
     }
 /* Schedule id's  */
     #schedule{
@@ -183,7 +183,11 @@
         -o-transform:scale(1.3); /* Opera */
          transform:scale(1.3);
     }
-    .speaker-info a:after {content:url('./images/link.svg');
+    .speaker-info a:after {
+        content:url('./images/link.svg');
+    }
+    .speaker-info a{
+        font-weight: bold;
     }
     .speaker-descript{
         padding-top:.1em;
@@ -314,7 +318,7 @@ Schedule section
                     <!-- Speaker 2-->
                     <div class="speaker">
                         <img src="images/smith.jpg"  alt="Chris Smith" class="speaker-img">
-                        <div class="speaker-info">Dr. Chris Smith<div class="speaker-descript">Virginia Tech / Postdoctoral Affairs Program Administrator</div></div>
+                        <div class="speaker-info"><a href="https://www.research.vt.edu/contacts/smith-chris.html ">Dr. Chris Smith </a><div class="speaker-descript">Postdoctoral Affairs Program Administrator, Virginia Tech.<br>Ph.D., Neurobiology.</div></div>
                     </div>
                 </div>
             </div>
@@ -342,7 +346,7 @@ Schedule section
                     <!-- Speaker 3-->
                     <div class="speaker">
                         <img src="images/hanson.png"  alt="Kenneth Hanson" class="speaker-img">
-                        <div class="speaker-info"><a href="">Dr. Kenneth Hanson </a><div class="speaker-descript">FSU / Chemistry &amp; Biochemistry / Associate Professor</div></div>
+                        <div class="speaker-info"><a href="https://www.chem.fsu.edu/person/dr-kenneth-hanson/">Dr. Kenneth Hanson </a><div class="speaker-descript">Associate Professor, Department of Chemistry &amp; Biochemistry, FSU.<br>PhD., Chemistry. </div></div>
                     </div>
                 </div>
             </div>
@@ -357,19 +361,19 @@ Schedule section
                     </div>
                     <!-- Speaker 4-->
                         <div class="speaker">
-                            <img src="images/bernardi.png"  alt="Francesca Bernardi" class="speaker-img"><div class="speaker-info">Dr. Francesca Bernardi<div class="speaker-descript">Worchester Polytechnic Institute / Department of Mathematical Sciences / Assistant Professor</div></div>
+                            <img src="images/bernardi.png"  alt="Francesca Bernardi" class="speaker-img"><div class="speaker-info"><a href="https://www.wpi.edu/people/faculty/fbernardi">Dr. Francesca Bernardi </a><div class="speaker-descript">Assistant Professor, Department of Mathematical Sciences, Worcester Polytechnic Institute.<br>Ph.D., Mathematics.</div></div>
                         </div>
                         <!-- Speaker 5-->
                         <div class="speaker">
-                            <img src="images/fardone.png"  alt="Erminia Fardone" class="speaker-img"><div class="speaker-info">Dr. Erminia Fardone<div class="speaker-descript">University of Miami / Miller School of Medicine / Assistant Scientist</div></div>
+                            <img src="images/fardone.png"  alt="Erminia Fardone" class="speaker-img"><div class="speaker-info"><a href="https://www.linkedin.com/in/mimifardone/">Dr. Erminia Fardone </a><div class="speaker-descript">Assistant Scientist, Miller School of Medicine, University of Miami.<br>Ph.D., Neurobiology and Life Sciences.</div></div>
                         </div>
                         <!-- Speaker 6-->
                         <div class="speaker">
-                            <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img"><div class="speaker-info">TBD<div class="speaker-descript"></div></div>
+                            <img src="images/dewar.png"  alt="William Dewar" class="speaker-img"><div class="speaker-info"><a href="https://www.gulfbase.org/people/dr-william-k-dewar">Dr. William Dewar </a><div class="speaker-descript">Pierre Welander Professor, Department of Earth, Ocean, and Atmospheric Science, FSU.<br>Ph.D., Physical Oceanography.</div></div>
                         </div>
                         <!-- Speaker 7-->
                         <div class="speaker">
-                            <img src="images/dewar.png"  alt="William Dewar" class="speaker-img"><div class="speaker-info">Dr. William Dewar<div class="speaker-descript">FSU / Earth, Ocean and Atmospheric Science / Pierre Welander Professor</div></div>
+                            <img src="images/trex.jpg"  alt="Photo of T Rex" class="speaker-img"><div class="speaker-info"><a href="https://www.ualberta.ca/rehabilitation/about-us/contact-us/faculty-directory/trelani-chapman">Dr. Trelani Chapman </a><div class="speaker-descript">Assistant Professor, Communication Sciences and Disorders, University of Alberta Edmonton.<br> Ph.D., Speech-Language Pathology.</div></div>
                         </div>
                 </div>
             </div>
@@ -390,8 +394,8 @@ Schedule section
                             <ul>
                                 <li>Zoom Room 1 / <span class="orange">HSF Great Hall</span> for Francesca Bernardi</li>
                                 <li>Zoom Room 2 / <span class="orange">HSF Room 2009</span> for Erminia Fardone</li>
-                                <li>Zoom Room 3 / <span class="orange">HSF Room 3008</span> for TBD</li>
-                                <li>Zoom Room 4 / <span class="orange">HSF Room 3009 </span>for William Dewar</li>
+                                <li>Zoom Room 3 / <span class="orange">HSF Room 3008</span> for William Dewar</li>
+                                <li>Zoom Room 4 / <span class="orange">HSF Room 3009 </span>for Trelani Chapman</li>
                             </ul>
                         </span>
                     </div>
@@ -440,14 +444,14 @@ Schedule section
                     <!-- Speaker 7-->
                     <div class="speaker">
                         <img src="images/costello.png"  alt="Photo of Dr. Tracy Costello" class="speaker-img">
-                        <div class="speaker-info">Dr. Tracy Costello<div class="speaker-descript">University of South Florida / Postdoctoral Affairs &amp; Graduate Student Development / Director</div></div>
+                        <div class="speaker-info"><a href="https://www.linkedin.com/in/tracycostello/">Dr. Tracy Costello </a><div class="speaker-descript">Director, Postdoctoral Affairs and Graduate Student Development, University of South Florida. <br>Ph.D., Human and Molecular Genetics.  </div></div>
                     </div>
                 </div>
             </div>
             <!-- Schedule: timetable: Panel discussion-->
             <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    3:35 <span class="est">EST</span>
+                    3:30 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
@@ -455,27 +459,27 @@ Schedule section
                     </div>
                     <!-- Speaker 4-->
                     <div class="speaker">
-                        <img src="images/crock.png"  alt="Nathan Crock" class="speaker-img"><div class="speaker-info">Dr. Nathan Crock<div class="speaker-descript">FSU / Scientific Computing // NewSci Labs / Director</div></div>
+                        <img src="images/crock.png"  alt="Nathan Crock" class="speaker-img"><div class="speaker-info"><a href="https://www.sc.fsu.edu/people?uid=ndc08">Dr. Nathan Crock </a><div class="speaker-descript">Director, NewSci Labs; Affiliate Faculty in Scientific Computing, FSU.<br>Ph.D., Computation Science.</div></div>
                     </div>
                     <!-- Speaker 5-->
                     <div class="speaker">
-                        <img src="images/krook.png"  alt="Anne Krook" class="speaker-img"><div class="speaker-info">Dr. Anne Krook<div class="speaker-descript">Consultant</div></div>
+                        <img src="images/krook.png"  alt="Anne Krook" class="speaker-img"><div class="speaker-info"><a href="http://annekrook.com/">Dr. Anne Krook </a><div class="speaker-descript">Career Coach. Founder and Principal, Practical Workplace Advice.<br>Ph.D., English Language and Literature.</div></div>
                     </div>
                     <!-- Speaker 6-->
                     <div class="speaker">
-                        <img src="images/lowry.jpg"  alt="Troy Lowry" class="speaker-img"><div class="speaker-info"><b>Dr. Troy Lowry</b><div class="speaker-descript">Institute for Defense Analyses / Research Analyst</div></div>
+                        <img src="images/lowry.jpg"  alt="Troy Lowry" class="speaker-img"><div class="speaker-info"><b>Dr. Troy Lowry</b><div class="speaker-descript">Research Analyst, Institute for Defense Analyses.<br>Ph.D., Physics.</div></div>
                     </div>
                     <!-- Speaker 7-->
                     <div class="speaker">
-                        <img src="images/costello.png"  alt="Tracy Costello" class="speaker-img">
-                        <div class="speaker-info"><a>Dr. Tracy Costello </a><div class="speaker-descript">University of South Florida / Postdoctoral Affairs &amp; Graduate Student Development / Director</div></div>
+                        <img src="images/costello.png"  alt="Photo of Dr. Tracy Costello" class="speaker-img">
+                        <div class="speaker-info"><a href="https://www.linkedin.com/in/tracycostello/">Dr. Tracy Costello </a><div class="speaker-descript">Director, Postdoctoral Affairs and Graduate Student Development, University of South Florida. <br>Ph.D., Human and Molecular Genetics.  </div></div>
                     </div>
                 </div>
             </div>
             <!-- Schedule: timetable: breakout rooms-->
             <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    4:05 <span class="est">EST</span>
+                    4:00 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
@@ -487,7 +491,7 @@ Schedule section
                                 <li>Zoom Room 1 / <span class="orange">HSF Great Hall</span> for Nathan Crock</li>
                                 <li>Zoom Room 2 / <span class="orange">HSF Room 2009</span> for Anne Krook</li>
                                 <li>Zoom Room 3 / <span class="orange">HSF Room 3008</span> for Troy Lowry</li>
-                                <li>Zoom Room 4 / <span class="orange">HSF Room 3009 </span>for TBD</li>
+                                <li>Zoom Room 4 / <span class="orange">HSF Room 3009 </span>for Tracy Costello</li>
                             </ul>
                     </div>
                 </div>
@@ -502,7 +506,7 @@ Schedule section
             <!-- Schedule: timetable: closing-->
             <div class="pure-g pad-t">
                 <div class="pure-u-1-3 pure-u-sm-1-8 schedule-time">
-                    4:35 <span class="est">EST</span>
+                    4:30 <span class="est">EST</span>
                 </div>
                 <div class="pure-u-5-6 pure-u-sm-7-8 schedule-speakers">
                     <div class="schedule-title">
