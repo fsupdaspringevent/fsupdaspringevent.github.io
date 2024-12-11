@@ -1,0 +1,12 @@
+{
+  "name": "fsupdaspringevent.github.io",
+  "version": "1.0.0",
+  "description": "This repository contains the project files for the [website](https://fsupdaspringevent.github.io/) for FSU PDA Spring Event 2022.",
+  "main": "index.js",
+  "scripts": {
+    "build": "html-minifier-terser src/index.html --decode-entities --collapse-whitespace --remove-comments --minify-css --minify-js --sort-attributes --sort-class-name --output=index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
